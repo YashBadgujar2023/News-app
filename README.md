@@ -1,6 +1,6 @@
 # news_app
 
-A new Flutter project.
+This is News App using State Management bloc and Using the get api in them
 
 ## Getting Started
 
