@@ -14,7 +14,7 @@ class NewsBloc extends Bloc<NewsEvent,NewsState> {
     on<data>((event, emit) async{
       // TODO: implement event handler
       emit(Newsloading());
-      var request =await http.get(Uri.parse("https://newsapi.org/v2/everything?q=apple&from=2024-05-11&to=2024-05-11&sortBy=popularity&apiKey=de981ead2fa843ec90b058f6b6b28676"));
+      var request =await http.get(Uri.parse("api Url"));
       if(request.statusCode == 200){
         Map<String,dynamic> responsedata = jsonDecode(request.body);
         log(responsedata.toString());
